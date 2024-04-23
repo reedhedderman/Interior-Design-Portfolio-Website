@@ -1,0 +1,147 @@
+/* $TOC :: Table of Contents */
+/* $RESET :: CSS resets for better homogeny across browsers */
+/* $CONT :: The containers. Keep the grid from taking up 100% */
+/* $GRID :: The Grid System */
+
+
+
+
+/* $RESET */
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol,
+ul {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container. This makes for responsive iamges */
+img {
+    max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+/* /RESET */
+
+
+
+
+/* $GRID */
+/* The columns. We set these inside a media query so they stack on mobile, but sit side-by-side on desktop (aka greater than 640px). */
+[class|="grid"] {
+    display: grid;
+    grid-auto-rows: minmax(max-content);
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.grid-full,
+.grid-half.stack {
+    grid-template-columns: minmax(10px, 1fr);
+}
+
+.grid-half {
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
+}
+
+@media (min-width: 48rem) {
+
+    .grid-half.stack {
+        grid-template-columns: repeat(2, minmax(10px, 1fr));
+    }
+
+    .grid-third {
+        grid-template-columns: repeat(3, minmax(10px, 1fr));
+    }
+
+    .grid-two-third-left {
+        grid-template-columns: minmax(10px, 2fr) minmax(10px, 1fr);
+    }
+
+    .grid-two-third-right {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 2fr);
+    }
+
+    .grid-fourth {
+        grid-template-columns: repeat(4, minmax(10px, 1fr));
+    }
+
+    .grid-two-fourth-left {
+        grid-template-columns: minmax(10px, 2fr) minmax(10px, 1fr) minmax(10px, 1fr);
+    }
+
+    .grid-two-fourth-right {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 2fr);
+    }
+
+    .grid-two-fourth-middle {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 2fr) minmax(10px, 1fr);
+    }
+
+    .grid-three-fourth-left {
+        grid-template-columns: minmax(10px, 3fr) minmax(10px, 1fr);
+    }
+
+    .grid-three-fourth-right {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
+    }
+
+    .grid-fifth {
+        grid-template-columns: repeat(5, minmax(10px, 1fr));
+    }
+
+    .grid-two-fifth-left {
+        grid-template-columns: minmax(10px, 2fr) minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr);
+    }
+
+    .grid-two-fifth-left-middle {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 2fr) minmax(10px, 1fr) minmax(10px, 1fr);
+    }
+
+    .grid-two-fifth-right-middle {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 2fr) minmax(10px, 1fr);
+    }
+
+    .grid-two-fifth-right {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 2fr);
+    }
+
+    .grid-three-fifth-left {
+        grid-template-columns: minmax(10px, 3fr) minmax(10px, 1fr) minmax(10px, 1fr) ;
+    }
+
+    .grid-three-fifth-middle {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr) minmax(10px, 1fr) ;
+    }
+
+    .grid-three-fifth-right {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 3fr);
+    }
+
+    .grid-four-fifth-left {
+        grid-template-columns: minmax(10px, 4fr) minmax(10px, 1fr);
+    }
+
+    .grid-four-fifth-right {
+        grid-template-columns: minmax(10px, 1fr) minmax(10px, 4fr);
+    }
+}
+/* /GRID */

@@ -1,0 +1,214 @@
+/* $TOC :: Table of Contents */
+/* $PAL :: Color Palette */
+/* $SECT :: Header/Footer Areas */
+/* $TYPE :: Typographic Styles */
+/* $UTIL :: Tools and Pouporri */
+/* $PRPG :: Page-specific Styles */
+
+
+
+
+/* $PAL */
+:root {
+    --alpha: #d5215e;
+    --beta: #5a726d;
+    --gamma: #cb904a;
+    --delta: #c0dcf3;
+    --epsilon: #252525;
+    --zeta: #ffffff;
+}
+/* /PAL */
+
+
+
+
+/* $CONT */
+/* The outer wrapper for the grid system */
+.container {
+    margin: 0 auto;
+    /* Centers the container on the x-axis */
+    max-width: 60rem;
+    /* Default calculation is 960px */
+    width: 90%;
+    /* If the browser width is less than 1120px, then it will only fill 90% of the width */
+}
+.thin-container {
+    margin: 0 auto;
+    /* Centers the container on the x-axis */
+    max-width: 40rem;
+    /* Default calculation is 960px */
+    width: 90%;
+    /* If the browser width is less than 1120px, then it will only fill 90% of the width */
+}
+/* /CONT */
+
+
+
+
+/* $SECT */
+.hero {
+    background-color: #d2dae5;
+    min-height: 100vh;
+    position: relative;
+}
+
+.footer {
+    background-color: #d2dae5;
+    color: var(--zeta);
+}
+
+.footer a,
+.footer a:visited {
+    color: var(--alpha);
+    transition: 1s color ease-in-out;
+    /* Transition allows for quick animations. This sets the animation will happen to the color property, last one second, and will ease in and then out. */
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: var(--delta);
+}
+
+.center {
+    text-align: center;
+}
+
+html {
+    font-size: 112.5%;
+    /*18px*/
+}
+
+body {
+    background: var(--zeta);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--epsilon);
+}
+
+/* /SECT */
+
+
+
+
+/* $TYPE */
+p {
+    margin: 1rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.488rem;
+}
+
+h2 {
+    font-size: 2.074rem;
+    color: var(--alpha);
+}
+
+h3 {
+    font-size: 1.728rem;
+}
+
+h4 {
+    font-size: 1.44rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+small,
+.text_small {
+    font-size: 0.833rem;
+}
+
+/* /TEXT */
+
+
+
+
+/* $UTIL */
+.abso-center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height:  6rem;
+    color: #FFF;
+}
+
+a.links,
+a.links:visited {
+    color: var(--beta);
+    transition: color 1s ease-in-out;
+}
+
+a.links:hover,
+a.links:focus {
+    color: var(--gamma);
+}
+
+a img {
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+a img:hover,
+a img:focus {
+    box-shadow: 14px 14px 8px var(--gamma);
+}
+
+/* /UTIL */
+
+
+
+
+/* $PRPG */
+#mch {
+    background-color: #ede4d2;
+    background-image: url('../img/project 1- 1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#coa {
+    background-color: #ede4d2;
+    background-image: url('../img/project 2- 1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#proj {
+    background-color: #ede4d2;
+    background-image: url('../img/project 3- 1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#projj {
+    background-color: #ede4d2;
+    background-image: url('../img/project 4- 1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* /PRPG */

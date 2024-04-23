@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-zoom=1">
+    <title>Flexigrid :: A Failsafe Grid System</title>
+    <link rel="stylesheet" href="scripts/flexigrid.css">
+    <link rel="stylesheet" href="scripts/custom.css">
+
+    <style>
+        .container:nth-child(3) [class|="grid"] p {
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- A Facismile of a Website Here -->
+    <div class="hero">
+        <div class="grid-full abso-center center">
+            <h1>
+                Flexigrid: A Failsafe Grid System
+            </h1>
+            <p style="max-width: 64ch; margin: 0 auto;">Flexigrid is designed to be a safe grid system for first time programmers. Using CSS Grid, Flexigrid ensure everything you do follows the grid system you specify, even if you forget (or don't need!) containers.</p>
+            <p style="padding-top: 3rem;">&darr;</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid-full center">
+            <h2>Features</h2>
+        </div>
+        <div class="grid-half stack">
+            <div>
+                <h3>Works with any HTML entity</h3>
+                <p>The grid automagically places items on the grid. If you want four images in a row, then drop four <code>&lsaquo;img&rsaquo;</code> tags next to each other, or group things using <code>&lsaquo;div&rsaquo;</code>. Flexigrid works with the outermost object!</p>
+            </div>
+            <div>
+                <h3>Designed for Safety</h3>
+                <p>Too many objects for your row? Too few? No worries! Flexigrid uses <code>template-columns</code> to make sure objects sit and flow how they need.</p>
+            </div>
+        </div>
+        <div class="grid-full center">
+            <h2>Not-So-Features</h2>
+        </div>
+        <div class="grid-third">
+            <div>
+                <h3>Rigid</h3>
+                <p>This code is a bit rigid and requires <em>a lot</em> of conditional rows to play safe. You're stuck with whatever layouts are written, and if you don't know how to add one (i.e. needed 1/8 styles) then you'd be out of luck. Not-so-flexigrid...</p>
+            </div>
+            <div>
+                <h3>Too Safe?</h3>
+                <p>Being too protective of the coder can create issues. Either proper coding isn't learned or the code gets in the way and doesn't allow for much creativity. Users end up building EOS'es (Every Other Site).</p>
+            </div>
+            <div>
+                <h3>Thin</h3>
+                <p>Just a grid. No padding. No spaces. Nothing special. Doesn't cover a lot of edge cases. This could change with time...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid-full">
+            <h2 class="center">The grid and its options!</h2>
+        </div>
+        <div class="grid-full">
+            <p>.grid-full (100%)</p>
+        </div>
+
+        <div class="grid-half">
+            <p>.grid-half (50% mobile/desktop)</p>
+            <p>.grid-half (50% mobile/desktop)</p>
+        </div>
+
+        <div class="grid-half stack">
+            <p>.grid-half-stack (50%)</p>
+            <p>.grid-half-stack (50%)</p>
+        </div>
+
+        <div class="grid-third">
+            <p>.grid-third (33%)</p>
+            <p>.grid-third (33%)</p>
+            <p>.grid-third (33%)</p>
+        </div>
+
+        <div class="grid-two-third-left">
+            <p>.grid-two-third-left (66%)</p>
+            <p>.grid-two-third-left (33%)</p>
+        </div>
+
+        <div class="grid-two-third-right">
+            <p>.grid-two-third-right (33%)</p>
+            <p>.grid-two-third-right (66%)</p>
+        </div>
+
+        <div class="grid-fourth">
+            <p>.grid-fourth (25%)</p>
+            <p>.grid-fourth (25%)</p>
+            <p>.grid-fourth (25%)</p>
+            <p>.grid-fourth (25%)</p>
+        </div>
+
+        <div class="grid-two-fourth-left">
+            <p>.grid-two-fourth-left (50%)</p>
+            <p>.grid-two-fourth-left (25%)</p>
+            <p>.grid-two-fourth-left (25%)</p>
+        </div>
+
+        <div class="grid-two-fourth-right">
+            <p>.grid-two-fourth-right (25%)</p>
+            <p>.grid-two-fourth-right (25%)</p>
+            <p>.grid-two-fourth-right (50%)</p>
+        </div>
+
+        <div class="grid-two-fourth-middle">
+            <p>.grid-two-fourth-middle (25%)</p>
+            <p>.grid-two-fourth-middle (50%)</p>
+            <p>.grid-two-fourth-middle (25%)</p>
+        </div>
+
+        <div class="grid-three-fourth-left">
+            <p>.grid-three-fourth-left (25%)</p>
+            <p>.grid-three-fourth-left (75%)</p>
+        </div>
+
+        <div class="grid-three-fourth-right">
+            <p>.grid-three-fourth-left (75%)</p>
+            <p>.grid-three-fourth-left (25%)</p>
+        </div>
+
+        <div class="grid-fifth">
+            <p>.grid-fifth (20%)</p>
+            <p>.grid-fifth (20%)</p>
+            <p>.grid-fifth (20%)</p>
+            <p>.grid-fifth (20%)</p>
+            <p>.grid-fifth (20%)</p>
+        </div>
+
+        <div class="grid-two-fifth-left">
+            <p>.grid-two-fifth-left (40%)</p>
+            <p>.grid-two-fifth-left (20%)</p>
+            <p>.grid-two-fifth-left (20%)</p>
+            <p>.grid-two-fifth-left (20%)</p>
+        </div>
+
+        <div class="grid-two-fifth-left-middle">
+            <p>.grid-two-fifth-left-middle (20%)</p>
+            <p>.grid-two-fifth-left-middle (40%)</p>
+            <p>.grid-two-fifth-left-middle (20%)</p>
+            <p>.grid-two-fifth-left-middle (20%)</p>
+        </div>
+
+        <div class="grid-two-fifth-right-middle">
+            <p>.grid-two-fifth-right-middle (20%)</p>
+            <p>.grid-two-fifth-right-middle (20%)</p>
+            <p>.grid-two-fifth-right-middle (40%)</p>
+            <p>.grid-two-fifth-right-middle (20%)</p>
+        </div>
+
+        <div class="grid-two-fifth-right">
+            <p>.grid-two-fifth-right (20%)</p>
+            <p>.grid-two-fifth-right (20%)</p>
+            <p>.grid-two-fifth-right (20%)</p>
+            <p>.grid-two-fifth-right (40%)</p>
+        </div>
+
+        <div class="grid-three-fifth-left">
+            <p>.grid-three-fifth-left (60%)</p>
+            <p>.grid-three-fifth-left (20%)</p>
+            <p>.grid-three-fifth-left (20%)</p>
+        </div>
+
+        <div class="grid-three-fifth-middle">
+            <p>.grid-three-fifth-middle (20%)</p>
+            <p>.grid-three-fifth-middle (60%)</p>
+            <p>.grid-three-fifth-middle (20%)</p>
+        </div>
+
+        <div class="grid-three-fifth-right">
+            <p>.grid-three-fifth-right (20%)</p>
+            <p>.grid-three-fifth-right (20%)</p>
+            <p>.grid-three-fifth-right (60%)</p>
+        </div>
+
+        <div class="grid-four-fifth-left">
+            <p>.grid-four-fifth-left (80%)</p>
+            <p>.grid-four-fifth-left (20%)</p>
+        </div>
+
+        <div class="grid-four-fifth-right">
+            <p>.grid-four-fifth-right (20%)</p>
+            <p>.grid-four-fifth-right (80%)</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid-full center">
+            <h2>Okay that's nice... how do I use this?</h2>
+        </div>
+    </div>
+    <div class="thin-container">
+        <div class="grid-full">
+            <p><strong>Step 1: Load the script in your header</strong></p>
+            <code>&lsaquo;link rel="stylesheet" href="path/to/your/scripts/flexigrid.css"&rsaquo;</code>
+            <hr />
+            <p><strong>Step 2: Use a row class from above</strong></p>
+            <code>
+                <pre>&lsaquo;div class="grid-third"&rsaquo;
+    ...
+&lsaquo;/div&rsaquo;</pre>
+            </code>
+            <hr />
+            <p><strong>Step 3: Add objects! Flexigrid will layout objects for you.</strong></p>
+            <code>
+                <pre>&lsaquo;div class="grid-third"&rsaquo;
+    &lsaquo;img src="an-image.png"&rsaquo;
+    &lsaquo;div&rsaquo; ... &lsaquo;/div&rsaquo;
+    &lsaquo;p&rsaquo; ... &lsaquo;/p&rsaquo;
+&lsaquo;/div&rsaquo;</pre>
+            </code>
+            <div class="grid-full" style="background-color:#ccc">
+                <h3>Result</h3>
+                <div class="grid-third">
+                    <img src="https://via.placeholder.com/300/09f/fff.png" />
+                    <div>
+                        <p>Content inside a &lsaquo;div&rsaquo;</p>
+                    </div>
+                    <p>Content inside a &lsaquo;p&rsaquo; tag. Fun fact: Did you know grids can nest?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
